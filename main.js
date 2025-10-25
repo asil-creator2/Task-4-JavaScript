@@ -249,5 +249,3 @@ for (const product of products ){
     document.write('</div>') // Close the product div
 }
 
-// Close the products container
-document.write('</div>')
