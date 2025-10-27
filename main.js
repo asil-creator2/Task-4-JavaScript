@@ -224,9 +224,11 @@ for (const product of products ){
             <h2>${product.description}</h2>
             <div class="price">$${product.price}</div>
     `)
+    // if price more than 100 or the name of the product is Mens Cotton Jacket print special offer !
     if (product.price < 100 || product.title == "Mens Cotton Jacket") {
         document.write('<div class="special-offer">Special Offer!</div>')
     }
+    // if not in stock print
     if (!product.inStock){
       document.write("<h2>❌ غير متاح الآن</h2>")
     }
